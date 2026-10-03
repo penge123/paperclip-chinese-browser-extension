@@ -1,0 +1,17 @@
+{
+  "name": "paperclip-zh-extension",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node --test",
+    "build": "esbuild src/main.js --bundle --format=iife --platform=browser --outfile=dist/content.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "jsdom": "^29.1.1"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "paperclip汉化浏览器插件",
+  "description": "在本机 Paperclip 页面显示经过审校的简体中文界面文字。",
+  "version": "0.1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://localhost/*", "http://127.0.0.1/*"],
+      "js": ["dist/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
